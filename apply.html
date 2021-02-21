@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Bottle Depot Home Page</title>
+       
+        <link href="./styles.css" rel="stylesheet">
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+      <script>
+      function SubForm (){
+          $.ajax({
+              url:'https://api.apispreadsheets.com/data/6799/',
+              type:'post',
+              data:$("#form").serializeArray(),
+              success: function(){
+                alert("Form Data Submitted")
+              },
+              error: function(){
+                alert("There was an error")
+              }
+          });
+      }
+      </script>
+    </head>
+    <body>
+      <div id="navbar">
+        <a href="./index.html"><img id="logo" src="BDLogo.png"></a>
+        <button id="locationslink" class="header"><a href="./locations.html">Our Locations</a></button>
+        <button id="contactlink" class="header"><a href="./contact.html">Contact</a></button>
+        <button id="applylink" class="header"><a href="./apply.html">Apply</a></button>
+        <a target="_blank" href="https://www.instagram.com/nybottledepot/"><i class="bi bi-instagram fa-2x"></i></a>
+        <a target="_blank" href="https://www.facebook.com/nybottledepot1"><i class="bi bi-facebook fa-2x"></i></a>
+       
+    </div>
+        <div id="applyheading">
+            <h1>We're Hiring</h1>
+            <h4>Pick up an appication at any one of our 15 locations or fill out the form below.</h4>
+        </div>
+        <hr id="apply-hr">
+        <div id="form">
+            <form>
+              
+                <div class="first-span">
+                <div>
+                <input class="sec" placeholder="First Name" name="Full Name" />
+                </div>
+                <div>
+                <input class="sec" placeholder="Last Name" name="Last Name" />
+                </div>
+                
+              </div>
+
+                <br>
+                <br>
+
+                <div class="first-span">
+                  <div>
+                    
+                  <input class="sec" placeholder="Email Address" name="Email Address" />
+                  </div>
+                  <div>
+                    
+                    <input class="sec" placeholder="Phone Number" type="tel" name="Primary Cell" />
+                  </div>
+                <br>
+                <br>
+                
+                </div>
+                
+                <br>
+                <br>
+                <label for="location-preference">Location Preference:</label>
+                <br>
+                <select name="location-preference" id="location-preference">
+                  <option value="" disabled selected>Choose One</option>
+                  <option value="211">Middletown (211)</placeholder>
+                  <option value="17M">Middletown (17M)</option>
+                  <option value="Highland">Middletown (Highland Ave)</option>
+                  <option value="Goshen">Goshen</option>
+                  <option value="Walden">Walden</option>
+                  <option value="New-Windsor">New Windsor</option>
+                  <option value="Newburgh">Newburgh</option>
+                  <option value="Montgomery">Montgomery</option>
+                  <option value="Monticello">Monticello</option>
+                  <option value="Central-Valley">Central Valley</option>
+                  <option value="Kingston">Kingston</option>
+                  <option value="Port-Ewen">Port Ewen</option>
+                  <option value="Rosendale">Rosendale</option>
+                  <option value="Suffern">Suffern</option>
+                  <option value="Nanuet">Nanuet</option>
+                </select>
+                <br>
+                <br>
+                <label>Are you looking for a part-time or full-time job?</label>
+                <br>
+                <input type="radio" id="full-time" value="full-time" name="Part/Full Time" />
+                <label for="full-time">Full-Time</label>
+                <br>
+                <input type="radio" id="part-time" value="part-time" name="Part/Full Time" />
+                <label for="part-time">Part-Time</label>
+                <br>
+                <br>
+                <label>Do you have reliable transportation?</label>
+                <br>
+                <input type="radio" id="transportation" value="yes" name="transportation" />
+                <label for="transportation">Yes</label>
+                <br>
+                <input type="radio" id="no-transportion" value="no" name="transportation" />
+                <label for="no-transportation">No</label>
+                <br>
+                <br>
+                <label>Are you willing to work at multiple locations in your area?</label>
+                <br>
+                <input type="radio" id="multiple-locations" value="yes" name="multiple-locations" />
+                <label for="multiple-locations">Yes</label>
+                <br>
+                <input type="radio" id="no-multiple-locations" value="no" name="multiple-locations" />
+                <label for="no-multiple-locations">No</label>
+                <br>
+                <br>
+                
+                
+            </form>
+            <button id="apply-submit">Submit</button>
+            
+            
+
+        </div>
+        <div id="footer">
+          <h4 id="footer-cp">© 2021 Bottle Depot</h6>
+          <div class="vl-footer"></div>
+          <h4 id="site-creator">Site Created by Tejpaul Singh</h4>
+      </div>
+
+        
+    </body>
+</html>
