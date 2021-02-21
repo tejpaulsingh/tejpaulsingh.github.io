@@ -1,0 +1,432 @@
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #034f84;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+#footer {
+    bottom: 0;
+}
+
+/*------index.html------*/
+
+.sr .card {
+    visibility: hidden;
+}
+
+#logo {
+    padding-left: 2vw;
+}
+
+#locationslink {
+    margin: 0 0px 0px 50vw;
+}
+
+
+
+#titlebar {
+
+    z-index: 1;
+    text-align: center;
+    font-size: 7vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 27vh 30vw 25vh 30vw;
+    
+}
+
+.hr-index {
+    margin: 0 5vw 2vw 5vw;
+}
+
+#slogan {
+    margin-top: 5vh;
+    font-size: 4vh;
+}
+
+#info {
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+
+.title {
+    font-family:'Raleway', sans-serif;
+    font-size: 5.5vh;
+    padding-top: 5vh;
+    padding-right: 2vw;
+    /*background-color: #C6C6C6;*/
+    text-align: right;
+    width: 40vw;
+    height: 26vh;
+    align-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5vw;
+}
+
+.title-two {
+    font-family:'Raleway', sans-serif;
+    font-size: 5.5vh;
+    padding-top: 5vh;
+    padding-left: 2vw;
+    text-align: left;
+    width: 40vw;
+    height: 26vh;
+    align-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5vw;
+}
+
+.vl {
+    border-left: 6px solid rgb(192, 192, 192);
+    height: 20vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
+    width: 100%;
+    height: 21vh;
+    padding-top: 3vh;
+    padding-left: 1vw;
+    padding-right: 10vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: center;
+}
+
+.content-two {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
+    width: 100%;
+    height: 21vh;
+    padding-top: 3vh;
+    padding-right: 1vw;
+    padding-left: 10vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: center;
+    text-align: right;
+}
+
+.card {
+    display: flex;
+}
+
+
+.header {
+    padding: 0 2vw 0 2vw;
+    height: 100px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: #034f84;
+    text-decoration: none;
+    border-color: #034f84;
+    border-style: solid;
+    font-size: 20px;
+    z-index: 20000;
+}
+
+.header:hover {
+    color: #92a8d1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+/*------contact.html------*/
+
+#contact {
+    height: 100vh;
+    display: flex;
+}
+
+#contact-info {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10vh 0 0 2vw;
+    display: grid;
+    text-align: center;
+    width: 70%;
+    font-size: 3.5vh;
+}
+
+#phone-info {
+    margin-bottom: 0;
+    grid-row: 1;
+    padding-left: 2vw;
+    padding-top: 10vh;
+    padding-right: 2vw;
+}
+
+#divider {
+    grid-row: 2;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#email-info {
+    grid-row: 3;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.contact-data {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4vh;
+}
+
+#contact-form {
+    margin-top: 15vh;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4vh;
+}
+
+#contact-title {
+    margin-bottom: 0;
+}
+
+#contact-sen {
+    margin-top: 0;
+    margin-bottom: 1.7vh;
+}
+
+.small-form {
+    height: 5vh;
+    width: 20vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.med-form {
+    width: 42.75vw;
+    height: 5vh;
+}
+
+.large-form {
+    width: 42.75vw;
+    padding-bottom: 19vh;
+    padding-top: 1vh;
+    margin-top: 0;
+}
+
+#contact-submit {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -1vh;
+    border-width: 0;
+    border-radius: 50px;
+    height: 7vh;
+    width: 10vw;
+    font-size: 3vh;
+    color: white;
+    background-color: black;
+    
+}
+
+
+
+
+/*------apply.html------*/
+
+#applyheading {
+    
+    padding: 20vh 0 8vh 0;
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+}
+
+#hide {
+    border-radius: 0.8vh;
+    border-width: 0;
+    height: 6vh;
+    width: 10vw;
+    background-color: #F4F000;
+    font-size: 2vh;
+    font-family:'Raleway', sans-serif;
+}
+
+#form {
+    display: none; 
+    font-family:'Raleway', sans-serif;
+    padding: 5vh 0 0 5vw; 
+}
+
+input {
+    border-radius: 0.8vh;
+    border-width: 0.001vh;
+    height: 2vh;
+}
+
+/* footer */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #034f84;
+    color: white;
+    font-family:'Raleway', sans-serif;
+    bottom: 0;
+    height: 10vh;
+    width: 100% - 3vw;
+    padding-left: 3vw;
+}
+
+.vl-footer {
+    border-left: 2px solid white;
+    height: 3vh;
+    margin: 3vh 0 3vh 0.5vw;
+}
+
+#site-creator {
+    margin-left: 0.5vw;
+}
+
+
+.bi-facebook {
+    margin-right: 2vw;
+}
+
+svg {
+    color: white;
+}
+
+
+/*----------locations.html----------*/
+
+#locations-box {
+   display: flex;
+}
+
+#map-container {
+    padding: 17vh 5vw 5vw 5vw;
+}
+
+#map {
+    overflow:hidden;
+    clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+iframe {
+    width: 40vw;
+    height: 76vh;
+}
+
+ul {
+    margin-top: 25vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 7.6vh;
+    border: 2px solid #ccc;
+    font-size: 3vh;
+    padding: 0 0 60vh 0;
+    font-family:'Raleway', sans-serif;
+    display:block;
+  }
+  
+li {
+    border-bottom: 1px solid #ccc;
+    width: 45vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+li:hover {
+    background-color:rgb(228, 228, 228);
+}
+
+.location-text {
+    padding: 2vh 0 0 1vw;
+}
+
+.bi-geo-alt {
+    color: black;
+}
+
+.address {
+    padding-left: 0;
+    padding-right: 1vw;
+    text-align: right;
+    float: right;
+    color: black;
+}
+
+.address-text {
+    color:black;
+}
+
+/* -------- Responsive -------- */
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .card {
+        display: block;
+        text-align: center;
+    }
+
+    .title {
+        padding: 0;
+        margin: 0;
+        height: 10vh;
+        width: 100%;
+        text-align: center;
+        order: 1;
+        display: table-header-group;
+    }
+
+    .content {
+        padding: 0;
+        margin: 0;
+        order: 2;
+        display: table-footer-group;
+    }
+
+    .title-two {
+        padding: 0;
+        margin: 0;
+        height: 10vh;
+        width: 100%;
+        text-align: center;
+        order: 1;
+        display: table-header-group;
+    }
+
+    .content-two {
+        padding: 0;
+        margin: 0;
+        order: 2;
+        display: table-footer-group;
+    }
+
+    .vl {
+        display: none;
+    }
+}
