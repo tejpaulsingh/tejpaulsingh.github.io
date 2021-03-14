@@ -23,6 +23,7 @@
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
       <script>
       function SubForm (){
           $.ajax({
@@ -45,34 +46,61 @@
         }
       </script>
 
+      
+
     </head>
     <body>
-        <div id="navbar">
-            <a href="./index.html"><img id="logo" src="BDLogo.png"></a>
-            <button id="locationslink" class="header"><a href="./locations.html">Our Locations</a></button>
-            <button id="contactlink" class="header"><a href="./contact.html">Contact</a></button>
-            <button id="applylink" class="header"><a href="./apply.html">Apply</a></button>
-            <a target="_blank" href="https://www.instagram.com/nybottledepot/"><i class="bi bi-instagram fa-2x"></i></a>
-            <a target="_blank" href="https://www.facebook.com/nybottledepot1"><i class="bi bi-facebook fa-2x"></i></a>
+      <div id="mobileMenu">
+        <nav id="menuButton">
+        <i id="menuToggle" class="bi bi-list"></i>
+    </nav>
+    <nav id="sidebar" class="sidebar animated-sidebar">
+        <ul id="sidebarList" class="animated-sidebar">
+            <li><a href="./index.html" class="sidebar-text">Home</a></li>
+            <li><a href="/locations.html" class="sidebar-text">Our Locations</a></li>
+            <li><a href="/contact.html" class="sidebar-text">Contact</a></li>
+            <li><a href="/apply.html" class="sidebar-text">Apply</a></li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/nybottledepot/" id="instagram" class="sidebar-bi"><i class="bi bi-instagram fa-lg"></i></a>
+                <a target="_blank" href="https://www.facebook.com/nybottledepot1" id="facebook" class="sidebar-bi"><i class="bi bi-facebook fa-lg"></i></a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div id="full" class="animated-sidebar">
+        <div class="top">
+            <div id="navbar" class="nav fixed-top">
+                <a href="./index.html"><img id="logo" src="BDLogo.png"></a>
+                <button id="locationslink" class="header"><a href="./locations.html">Our Locations</a></button>
+                <button id="contactlink" class="header"><a href="./contact.html">Contact</a></button>
+                <button id="applylink" class="header"><a href="./apply.html">Apply</a></button>
+                <a target="_blank" href="https://www.instagram.com/nybottledepot/"><i class="bi bi-instagram fa-2x"></i></a>
+                <a target="_blank" href="https://www.facebook.com/nybottledepot1"><i class="bi bi-facebook fa-2x"></i></a>
+            </div>
+            <div class="page-header animated fadeInDown" id="page-header-contact">
+                <h2>Get In Touch!</h2>
+            </div>
         </div>
+        
+        <div class="divider"></div>
         <div id="contact">
             <div id="contact-info">
                 <div id="phone-info">
                     <i class="bi bi-telephone"></i>
-                    <h2>Leave Us a Call:</h2>
+                    <h2 class="contact-title">Leave Us a Call:</h2>
                     <h2 class="contact-data">1-877-685-2496</h2>
                 </div>
-                <div id="divider"><hr></div>
+                <div class="contact-divider"><hr></div>
                 <div id="email-info">
                     <i class="bi bi-envelope"></i>
-                    <h2>Send Us an Email:</h2>
+                    <h2 class="contact-title">Send Us an Email:</h2>
                     <h2 class="contact-data">BottleDepot@NYBottleDepot.com</h2>
                 </div>
+                
             </div>
-            
+            <div class="contact-divider"><hr></div>
             <div id="contact-form">
-                <h2 id="contact-title">Get in Touch!</h2>
-                <h6 id="contact-sen">Fill out this simple form and we will get back to you as quickly as possible.</h6>
+                <h6 id="contact-sen">Fill out this simple form and we will get back to you as quickly as possible</h6>
                 <form id="contact-form1">
                     <input class="small-form" name="First_Name" placeholder="First Name"/>
                     <input class="small-form" name="Last_Name" placeholder="Last Name"/>
@@ -100,5 +128,31 @@
             <div class="vl-footer"></div>
             <h4 id="site-creator">Site Created by Tejpaul Singh</h4>
         </div>
+        </div>
+        <script>
+          $('#menuButton').click(function(){
+              if($('#sidebar').hasClass('sidebar-open')) {
+                  $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+                  $('#mobileMenu').undim();
+              }
+              else {
+                  $('#sidebar').addClass('sidebar-open').removeClass('sidebar-close');
+                  $('#mobileMenu').dimBackground({darkness : 0.4});
+              }
+          });
+
+          $('html').click(function() {
+            if($('#sidebar').hasClass('sidebar-open')) {
+              $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+              $('#mobileMenu').undim();
+            }
+          });
+
+          $('#menuButton').click(function(event){
+              event.stopPropagation();
+          });
+
+        </script>
+        <script type="text/javascript" src="https://andywer.github.io/jquery-dim-background/jquery.dim-background.min.js"></script>
     </body>
 </html>

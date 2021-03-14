@@ -3,7 +3,6 @@
 <html lang="en">
     <head>
         <title>Bottle Depot Home Page</title>
-        <link href="styles.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -14,31 +13,60 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+        <link href="styles.css" rel="stylesheet">
+       
     </head>
     <body>
-
-        <nav id="navbar">
-            <a href="/index.html"><img id="logo" src="BDLogo.png"></a>
-            <button id="locationslink" class="header"><a href="/locations.html">Our Locations</a></button>
-            <button id="contactlink" class="header"><a href="/contact.html">Contact</a></button>
-            <button id="applylink" class="header"><a href="/apply.html">Apply</a></button>
-            <a target="_blank" href="https://www.instagram.com/nybottledepot/"><i class="bi bi-instagram fa-2x"></i></a>
-            <a target="_blank" href="https://www.facebook.com/nybottledepot1"><i class="bi bi-facebook fa-2x"></i></a>
-           
+        <div id="mobileMenu">
+                <nav id="menuButton">
+                <i id="menuToggle" class="bi bi-list"></i>
             </nav>
-        <div id="titlebar">
-            <h1 id="title">Bottle Depot</h1>
-            <h3 id="slogan" class="titlecard">One Stop to Return all NY Cans & Bottles</h3>
+            <nav id="sidebar" class="sidebar animated-sidebar">
+                <ul id="sidebarList" class="animated-sidebar">
+                    <li><a href="./index.html" class="sidebar-text">Home</a></li>
+                    <li><a href="/locations.html" class="sidebar-text">Our Locations</a></li>
+                    <li><a href="/contact.html" class="sidebar-text">Contact</a></li>
+                    <li><a href="/apply.html" class="sidebar-text">Apply</a></li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/nybottledepot/" id="instagram" class="sidebar-bi"><i class="bi bi-instagram fa-lg"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/nybottledepot1" id="facebook" class="sidebar-bi"><i class="bi bi-facebook fa-lg"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <div id="full" class="animated-sidebar">
+
+        <div class="top">
+            
+        
+
+       
+            <nav id="navbar" class="nav fixed-top">
+                <a href="/index.html"><img id="logo" src="BDLogo.png"></a>
+                <button id="locationslink" class="header"><a href="/locations.html">Our Locations</a></button>
+                <button id="contactlink" class="header"><a href="/contact.html">Contact</a></button>
+                <button id="applylink" class="header"><a href="/apply.html">Apply</a></button>
+                <a target="_blank" href="https://www.instagram.com/nybottledepot/"><i class="bi bi-instagram fa-2x"></i></a>
+                <a target="_blank" href="https://www.facebook.com/nybottledepot1"><i class="bi bi-facebook fa-2x"></i></a>
+            
+                </nav>
+            <div id="titlebar" class="animated fadeInDown">
+                <h1 id="title">Bottle Depot</h1>
+                <h3 id="slogan" class="titlecard">One Stop to Return all NY Cans & Bottles</h3>
+                
+            </div>
+        
         </div>
-        <hr class="hr-index">
         <div id="info">
-            <div id="what-we-do" class="card" data-aos="fade-right">
+            <div id="what-we-do" class="card" data-aos="fade-up" data-aos-duration="1500">
                 <h1 id="what-we-do-title" class="title">What We Do</h1>
-                <div class="vl"></div>
+                
                 <h4 id="what-we-do-content" class="content">
                     We are the leading bottle and can return center in the Hudson Valley. 
                     We take all NY 5¢ deposit empties and get your money back to you. 
+                    There is no longer a need to wait on slow return machines.
                     With returning your bottles and cans, you are doing your part in protecting our environment.
                     Come to a Bottle Depot near you for a fast, clean, and convienent bottle return experience.
 
@@ -46,25 +74,19 @@
             </div>
             <br>
             <hr class="hr-index">
-            <div id="precounts" class="card" data-aos="fade-left">
-                
+            <div id="precounts" class="card-two">
+                <div id="precounts-text" data-aos="fade-up" data-aos-duration="1500">
+                <h1 id="precounts-title" class="title-two">Precounts</h1>
                 <h4 id="precounts-content" class="content-two">To make your wait even shorter, we have introduced precounting. 
                     You are free to count the returns you bring in beforehand and our employees will only count one bag for verification.
                     Please make sure that your bags are labelled with the number of empties on each bag.</h4>
-                    <div class="vl"></div>
-                    <h1 id="precounts-title" class="title-two">Precounts</h1>
+
+                </div>
+                <img id="precounts-image" src="/bottles.png" data-aos="fade-up" data-aos-duration="2000">
+                  
+                    
             </div>
-            <br>
-            <hr class="hr-index">
-            <div id="hiring" class="card" data-aos="fade-right">
-                <h1 id="hiring-title" class="title">We're<br>Hiring</h1>
-                <div class="vl"></div>
-                <h4 id="hiring-content" class="content">We are currently hiring for most locations. 
-                    Paper applications are available at all of our locations and a digital application 
-                    is available in the Apply tab.</h4>
-            </div>
-            <br>
-            <hr class="hr-index">
+            
             
         </div>
         <div id="footer">
@@ -73,8 +95,32 @@
             <h4 id="site-creator">Site Created by Tejpaul Singh</h4>
         </div>
 
-        
+    </div>
+    <script>
+        $('#menuButton').click(function(){
+            if($('#sidebar').hasClass('sidebar-open')) {
+                $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+                $('#mobileMenu').undim();
+            }
+            else {
+                $('#sidebar').addClass('sidebar-open').removeClass('sidebar-close');
+                $('#mobileMenu').dimBackground({darkness : 0.4});
+            }
+        });
 
+        $('html').click(function() {
+          if($('#sidebar').hasClass('sidebar-open')) {
+            $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+            $('#mobileMenu').undim();
+          }
+        });
+
+        $('#menuButton').click(function(event){
+            event.stopPropagation();
+        });
+
+      </script>
+      <script type="text/javascript" src="https://andywer.github.io/jquery-dim-background/jquery.dim-background.min.js"></script>
     <!--Add AOS-->
         <script>
           AOS.init({

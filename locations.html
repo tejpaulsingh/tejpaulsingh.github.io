@@ -15,10 +15,30 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        
+        <script src="scripts.js"></script>
     </head>
     <body>
-        <div id="navbar">
+
+      <div id="mobileMenu">
+        <nav id="menuButton">
+        <i id="menuToggle" class="bi bi-list"></i>
+    </nav>
+    <nav id="sidebar" class="sidebar animated-sidebar">
+        <ul id="sidebarList" class="animated-sidebar">
+            <li><a href="./index.html" class="sidebar-text">Home</a></li>
+            <li><a href="/locations.html" class="sidebar-text">Our Locations</a></li>
+            <li><a href="/contact.html" class="sidebar-text">Contact</a></li>
+            <li><a href="/apply.html" class="sidebar-text">Apply</a></li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/nybottledepot/" id="instagram" class="sidebar-bi"><i class="bi bi-instagram fa-lg"></i></a>
+                <a target="_blank" href="https://www.facebook.com/nybottledepot1" id="facebook" class="sidebar-bi"><i class="bi bi-facebook fa-lg"></i></a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div id="full" class="animated-sidebar">
+      <div class="top">
+        <div id="navbar" class="nav fixed-top">
             <a href="./index.html"><img id="logo" src="BDLogo.png"></a>
             <button id="locationslink" class="header"><a href="./locations.html">Our Locations</a></button>
             <button id="contactlink" class="header"><a href="./contact.html">Contact</a></button>
@@ -27,13 +47,18 @@
             <a target="_blank" href="https://www.facebook.com/nybottledepot1"><i class="bi bi-facebook fa-2x"></i></a>
         
         </div>
+        <div class="page-header animated fadeInDown">
+          <h1>Find a Bottle Depot Near You</h1>
+        </div>
+      </div>
+      
         <div id="locations-box">
             <div id="map-container">
                 <div id="map">
                   <iframe src="https://www.google.com/maps/d/embed?mid=1RU7sY2EwEpdnX3OAX-zltWED5u3w-KIR"></iframe>            
                 </div>
             </div>
-            <div id="locations-list">
+            <div id="locations-list" class="amimated-sidebar">
                 <ul>
                     <a href="./locations/211.html">
                       <li class="location-text"><span class="address-text">Bottle Depot - Middletown (211)</span>
@@ -104,7 +129,7 @@
                     <a href="./locations/port-ewen.html">
                       <li class="location-text"><span class="address-text">Bottle Depot - Port Ewen</span>
                         <span class="address">
-                          <i class="bi bi-geo-alt"></i>441 U.S. 9W,<br>Port Ewen, NY</span>
+                          <i class="bi bi-geo-alt"></i>441 Route 9W,<br>Port Ewen, NY</span>
                       </li>
                     </a>  
                     <a href="./locations/goshen.html">
@@ -124,7 +149,19 @@
                         <span class="address">
                         <i class="bi bi-geo-alt"></i>1132 New York 32,<br>Rosendale, NY</span>
                       </li>
-                    </a> 
+                    </a>
+                    <a href="./locations/orangeburg.html">
+                      <li class="location-text"><span class="address-text">Bottle Depot - Orangeburg</span>
+                        <span class="address">
+                        <i class="bi bi-geo-alt"></i>319 Route 303,<br>Orangeburg, NY</span>
+                      </li>
+                    </a>
+                    <a href="./locations/stony-point.html">
+                      <li class="location-text"><span class="address-text">Bottle Depot - Stony Point</span>
+                        <span class="address">
+                        <i class="bi bi-geo-alt"></i>43 N Liberty Drive,<br>Stony Point, NY</span>
+                      </li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -134,5 +171,33 @@
             <div class="vl-footer"></div>
             <h4 id="site-creator">Site Created by Tejpaul Singh</h4>
         </div>
+        </div>
+
+        
+        <script>
+          $('#menuButton').click(function(){
+              if($('#sidebar').hasClass('sidebar-open')) {
+                  $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+                  $('#mobileMenu').undim();
+              }
+              else {
+                  $('#sidebar').addClass('sidebar-open').removeClass('sidebar-close');
+                  $('#mobileMenu').dimBackground({darkness : 0.4});
+              }
+          });
+
+          $('html').click(function() {
+            if($('#sidebar').hasClass('sidebar-open')) {
+              $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+              $('#mobileMenu').undim();
+            }
+          });
+
+          $('#menuButton').click(function(event){
+              event.stopPropagation();
+          });
+
+        </script>
+        <script type="text/javascript" src="https://andywer.github.io/jquery-dim-background/jquery.dim-background.min.js"></script>
     </body>
 </html>
