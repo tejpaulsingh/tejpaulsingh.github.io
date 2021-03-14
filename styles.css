@@ -964,8 +964,7 @@ iframe {
 @media only screen 
 and (max-device-width: 800px)
 and (min-device-width: 501px)
-and (min-device-height: 800px)
-and (max-device-height: 1000px) {
+and (orientation: Portrait) {
 
 
     #navbar {
