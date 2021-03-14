@@ -962,7 +962,7 @@ iframe {
 
 
 @media only screen 
-and (max-device-width: 800px)
+and (max-device-width: 1200px)
 and (min-device-width: 501px)
 and (orientation: Portrait) {
 
@@ -1064,6 +1064,26 @@ and (orientation: Portrait) {
     #titlebar {
         font-size: 5vh;
         padding-top: 10vh;
+    }
+
+    .card-two {
+        display: block;
+        text-align: center;
+        align-content: center;
+        margin-bottom: 0;
+    }
+    #precounts-text {
+        text-align: center;
+        margin-left:  10vw;
+        margin-right: 10vw;
+    }
+
+    #precounts-image{
+        height: 70vw;
+        align-items: center;
+        width: auto;  
+        margin: 0;
+        float: none;
     }
 
     #contact {
@@ -1168,9 +1188,38 @@ and (orientation: Portrait) {
     vertical-align: middle;
   }
 
+  #locations-box {
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 50vh;
+}
+
+#locations-list {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: -15vh;
+}
+
+.location-text {
+    font-size: 2vh;
+    width: 100%;
+}
+
+.address-text {
+    margin-left: 0.5vh;
+}
+
+.address {
+    margin-right: 2vh;
+}
     .top {
         margin-top: -8vh;
-        background-size: 210%;
+        background-size: 265%;
     }
 
 }
