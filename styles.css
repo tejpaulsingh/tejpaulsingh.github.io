@@ -961,7 +961,220 @@ iframe {
   }
 
 
+@media only screen 
+and (max-device-width: 800px)
+and (min-device-width: 501px)
+and (min-device-height: 800px)
+and (max-device-height: 1000px) {
 
+
+    #navbar {
+        display:none;
+        margin-top: -5vh;
+    }
+
+    #mobileMenu {
+        display: block;
+        height: 5vh;
+        width: 5vh;
+        border: none;
+    }
+
+    #menuButton {
+        display: block;
+        float: left;
+        padding-top: 2vh;
+        padding-left: 2vh;
+        position: fixed;
+        border: none;
+        z-index: 100000;
+    }
+
+    #menuToggle {
+        font-size: 5vh;
+        border: none;
+    }
+
+    #menuClick {
+        background-color: transparent;
+        border: none;
+        padding-top: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #sidebar {
+        position: fixed;
+        float: left;
+        z-index: 10000; 
+        margin-left: -60vh;
+        width: 55vw;
+        
+    }
+
+    #sidebarList {
+        padding-bottom: 80vh;
+        border: none;
+        background-color: rgb(218, 218, 218);
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 15vh;
+        padding-left: 5vw;
+        overflow-y: hidden;
+    }
+
+
+    .sidebar-hr {
+        border: 0.1vw solid black;
+        margin-right: 3vw;
+    }
+
+    .animated-sidebar {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+     }
+
+    
+    .sidebar-lighten {
+        -webkit-animation-name: sidebar-lighten;
+        animation-name: sidebar-lighten;
+     }
+
+     .sidebar-text {
+         color: black;
+         width: inherit;
+         margin-top: 0;
+         padding-top: 3vh;
+     }
+
+     .sidebar-bi {
+         color: black;
+         float: 0;
+         margin-left: 0;
+         margin-top: 7vw;
+     }
+
+     #facebook {
+        margin-right: 30vw;
+    }
+
+    #titlebar {
+        font-size: 5vh;
+        padding-top: 10vh;
+    }
+
+    #contact {
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        padding-bottom: 5vh;
+    }
+  
+    #contact-info {
+        margin: 0;
+        width: 100%;
+    }
+  
+  
+    .contact-title {
+        font-size: 6vh;
+    }
+  
+    .contact-data {
+        font-size: 4vh;
+    }
+  
+   #contact-form {
+       position: static;
+       margin-top: 5vh;
+   }
+  
+   #contact-sen {
+       font-size: 2.5vh;
+   }
+  
+   #contact-form1 {
+       width: 100%;
+   }
+  
+   .small-form {
+      width: 60vw;
+      font-size: 1.5vh;
+   }
+  
+   .med-form {
+       width: 85vw;
+       font-size: 1.5vh;
+   }
+  
+   .large-form {
+       width: 85vw;
+       font-size: 1.5vh;
+   }
+  
+   #contact-submit {
+       width: 35vw;
+   }
+  
+  
+   .page-header {
+    font-size: 3vh;
+    }
+
+
+ #form {
+     width: 100%;
+     padding-bottom: 5vh;
+ }
+
+ .sec {
+     width: 40vw;
+     font-size: 1vh;
+ }
+
+ .apply-text {
+     font-size: 2vh;
+ }
+
+ .radio {
+     width: 3vw;
+ }
+
+ #bottom {
+     margin-bottom: 3vh;
+ }
+
+ #location-preference {
+     width: 60vw;
+     height: 3vh;
+     margin-bottom: 2vh;
+ }
+
+ #apply-submit {
+     margin-top: 2vh;
+     width: 35vw;
+ }
+
+ label{
+    font-size:18px;
+    vertical-align: middle;
+  }
+  
+  input[type="radio"]{
+    vertical-align: middle;
+  }
+
+    .top {
+        margin-top: -8vh;
+        background-size: 210%;
+    }
+
+}
 
 
 
