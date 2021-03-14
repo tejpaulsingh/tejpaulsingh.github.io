@@ -154,7 +154,7 @@ body {
 }
 
 #precounts-image {
-    height: 65vh;
+    height: auto;
     width: 65vh;
     float: right;
     margin-right: 20vh;
@@ -307,7 +307,9 @@ body {
     color: white;
 }
 
-
+#small-divs {
+    margin-bottom: 3vh;
+}
 
 
 /*------apply.html------*/
@@ -896,16 +898,71 @@ iframe {
   and (max-device-width: 800px)
   and (min-device-width: 501px) {
 
-    #top {
-        margin-right: -15vh;
+    #locationslink {
+        margin-left: 25vw;
     }
 
-    #card-two {
-        margin-right: 50vh;
+    #card-two { 
+        height: 10vh;
     }
+
+    #precounts-text {
+        margin: 0;
+        padding-left: 10vh;
+        padding-right: 10vh;
+        width: 60vw;
+        
+    }
+
+    #precounts-image {
+        height: auto;
+        width: 40vw;
+        margin-right: 5vw;
+    }
+
+    .top {
+        padding-top: 20vh;
+        background-size: 200%;
+    }
+
+    #titlebar {
+        padding: 0;
+        height: 75vh;
+    }
+
+    /*locations*/
+
+    #locations-title {
+        padding-top: -5vh;
+    }
+
+    #list {
+        font-size: 2vh;
+    }
+
+
+/*contact*/
+
+#contact-info {
+    padding-top: 0;
+}
+
+
+.contact-form {
+    width: 42vw;
+}
+
+.small-form {
+    width:42vw;
+}
+
+
+
   }
 
-  
+
+
+
 
 
   /*animations*/
