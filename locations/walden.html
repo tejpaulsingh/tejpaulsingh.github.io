@@ -21,6 +21,23 @@
        
     </head>
     <body>
+        <div id="mobileMenu">
+            <nav id="menuButton">
+            <i id="menuToggle" class="bi bi-list"></i>
+        </nav>
+        <nav id="sidebar" class="sidebar animated-sidebar">
+            <ul id="sidebarList" class="animated-sidebar">
+                <li><a href="./index.html" class="sidebar-text">Home</a></li>
+                <li><a href="/locations.html" class="sidebar-text">Our Locations</a></li>
+                <li><a href="/contact.html" class="sidebar-text">Contact</a></li>
+                <li><a href="/apply.html" class="sidebar-text">Apply</a></li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/nybottledepot/" id="instagram" class="sidebar-bi"><i class="bi bi-instagram fa-lg"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/nybottledepot1" id="facebook" class="sidebar-bi"><i class="bi bi-facebook fa-lg"></i></a>
+                </li>
+            </ul>
+        </nav>
+        </div>
         <div class="top">
                 <div id="navbar" class="nav fixed-top">
                 <a href="/index.html"><img id="logo" src="BDLogo.png" width="100" height="100"></a>
@@ -80,5 +97,31 @@
             <div class="vl-footer"></div>
             <h4 id="site-creator">Site Created by Tejpaul Singh</h4>
         </div>
+        <script>
+          $('#menuButton').click(function(){
+              if($('#sidebar').hasClass('sidebar-open')) {
+                  $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+                  $('#mobileMenu').undim();
+              }
+              else {
+                  $('#sidebar').addClass('sidebar-open').removeClass('sidebar-close');
+                  $('#mobileMenu').dimBackground({darkness : 0.4});
+              }
+          });
+
+          $('html').click(function() {
+            if($('#sidebar').hasClass('sidebar-open')) {
+              $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+              $('#mobileMenu').undim();
+            }
+          });
+
+          $('#menuButton').click(function(event){
+              event.stopPropagation();
+          });
+
+        </script>
+        <script type="text/javascript" src="https://andywer.github.io/jquery-dim-background/jquery.dim-background.min.js"></script>
+    
     </body>
 </html>

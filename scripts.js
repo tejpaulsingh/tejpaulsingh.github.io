@@ -8,6 +8,29 @@ $(window).scroll(function(){
         $('.fixed-top').css('background', '#034f84');
     }
 });
+          $('#menuButton').click(function(){
+              if($('#sidebar').hasClass('sidebar-open')) {
+                  $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+                  $('#mobileMenu').undim();
+              }
+              else {
+                  $('#sidebar').addClass('sidebar-open').removeClass('sidebar-close');
+                  $('#mobileMenu').dimBackground({darkness : 0.4});
+              }
+          });
+
+          $('html').click(function() {
+            if($('#sidebar').hasClass('sidebar-open')) {
+              $('#sidebar').addClass('sidebar-close').removeClass('sidebar-open');
+              $('#mobileMenu').undim();
+            }
+          });
+
+          $('#menuButton').click(function(event){
+              event.stopPropagation();
+          });
+
+    
 
 
 
