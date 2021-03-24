@@ -537,17 +537,9 @@ li:hover {
     margin-top: 1vh;
 }
 
-#stony-point {
-    background: linear-gradient( rgba(0, 0, 0, 0.2),
-     rgba(0, 0, 0, 0.2) ), url("stony_point.jpg");
-     background-size: 100%;
-}
 
-#m-211 {
-    background: linear-gradient( rgba(0, 0, 0, 0.2),
-     rgba(0, 0, 0, 0.2) ), url("211.png");
-     background-size: 100%;
-}
+
+
 
 #menuButton {
     display: none;
