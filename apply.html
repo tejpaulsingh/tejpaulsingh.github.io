@@ -83,10 +83,10 @@
               
                 <div class="first-span">
                 <div>
-                <input class="sec" placeholder="First Name" name="First Name" />
+                <input class="sec" placeholder="First Name" name="First Name" required/>
                 </div>
                 <div>
-                <input class="sec" placeholder="Last Name" name="Last Name" />
+                <input class="sec" placeholder="Last Name" name="Last Name" required/>
                 </div>
                 
               </div>
@@ -97,11 +97,11 @@
                 <div id="bottom" class="first-span">
                   <div>
                     
-                  <input class="sec" placeholder="Email Address" name="Email Address" />
+                  <input class="sec" placeholder="Email Address" name="Email Address" required/>
                   </div>
                   <div>
                     
-                    <input class="sec" placeholder="Phone Number" type="tel" name="Primary Cell" />
+                    <input class="sec" placeholder="Phone Number" type="tel" name="Primary Cell" required/>
                   </div>
                 <br>
                 <br>
@@ -112,7 +112,7 @@
                 <br>
                 <label id="location-preferences-text" class="apply-text" for="location-preference">Location Preference:</label>
                 <br>
-                <select name="location-preference" id="location-preference">
+                <select name="location-preference" id="location-preference" required>
                   <option value="" disabled selected>Choose One</option>
                   <option value="211">Middletown (211)</placeholder>
                   <option value="17M">Middletown (17M)</option>
@@ -131,33 +131,34 @@
                   <option value="Nanuet">Nanuet</option>
                   <option value="Orangeburg">Orangeburg</option>
                   <option value="Stony Point">Stony Point</option>
+                  <option value="No Preference">No Preference</option>
                 </select>
                 <br>
                 <br>
                 <label class="apply-text">Are you looking for a part-time or full-time job?</label>
                 <br>
-                <input class="radio" type="radio" id="full-time" value="full-time" name="Part/Full Time" />
+                <input class="radio" type="radio" id="full-time" value="full-time" name="Part/Full Time" required/>
                 <label class="apply-text" for="full-time">Full-Time</label>
                 <br>
-                <input class="radio" type="radio" id="part-time" value="part-time" name="Part/Full Time" />
+                <input class="radio" type="radio" id="part-time" value="part-time" name="Part/Full Time" required/>
                 <label class="apply-text" for="part-time">Part-Time</label>
                 <br>
                 <br>
                 <label class="apply-text">Do you have reliable transportation?</label>
                 <br>
-                <input class="radio" type="radio" id="transportation" value="yes" name="transportation" />
+                <input class="radio" type="radio" id="transportation" value="yes" name="transportation" required/>
                 <label class="apply-text" for="transportation">Yes</label>
                 <br>
-                <input class="radio" type="radio" id="no-transportion" value="no" name="transportation" />
+                <input class="radio" type="radio" id="no-transportion" value="no" name="transportation" required/>
                 <label class="apply-text" for="no-transportation">No</label>
                 <br>
                 <br>
                 <label class="apply-text">Are you willing to work at multiple locations in your area?</label>
                 <br>
-                <input class="radio" type="radio" id="multiple-locations" value="yes" name="multiple-locations" />
+                <input class="radio" type="radio" id="multiple-locations" value="yes" name="multiple-locations" required/>
                 <label class="apply-text" for="multiple-locations">Yes</label>
                 <br>
-                <input class="radio" type="radio" id="no-multiple-locations" value="no" name="multiple-locations" />
+                <input class="radio" type="radio" id="no-multiple-locations" value="no" name="multiple-locations" required/>
                 <label class="apply-text" for="no-multiple-locations">No</label>
                 <br>
                 <br>
