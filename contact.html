@@ -126,12 +126,10 @@
                     <input class="large-form" name="Message" placeholder="How Can We Help You?" />
                     <br>
                     <br>
-                    <button id="contact-submit" class="g-recaptcha" 
-                    data-sitekey="reCAPTCHA_site_key" 
-                    data-callback='onSubmit' 
-                    data-action='submit' onclick='SubForm()'><b>Submit</b></button>
+                    <button id="contact-submit" onclick='SubForm()'><b>Submit</b></button>
                 </form>
             </div>
+            <p id="contactthankyou" class="gone">Thank you for submitting your question. We will try to help you as soon as possible.</p>
         </div>
         <div id="footer">
             <h4 id="footer-cp">© 2021 Bottle Depot</h6>
@@ -162,6 +160,10 @@
               event.stopPropagation();
           });
 
+          $('#contact-submit').click(function() {
+            $('#contact-form').addClass('gone').removeClass('here');
+            $('#contactthankyou').removeClass('gone').addClass('here');
+          })
         </script>
         <script type="text/javascript" src="https://andywer.github.io/jquery-dim-background/jquery.dim-background.min.js"></script>
     </body>

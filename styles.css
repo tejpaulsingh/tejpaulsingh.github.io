@@ -13,6 +13,13 @@
     transition: all .5s ease-in-out;
 }
 
+.gone {
+    display: none;
+}
+
+.here {
+    display: block;
+}
 
 .bi-facebook .bi-instagram {
     padding: 0 2vw 0 2vw;
@@ -310,6 +317,9 @@ body {
     margin-bottom: 3vh;
 }
 
+#contactthankyou {
+    
+}
 
 /*------apply.html------*/
 
@@ -368,6 +378,14 @@ input {
     background-color: black;
     color: white;
 }
+
+#applythankyou {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 10vh;
+    font-size: 4vh;
+}
+
 
 /* footer */
 
