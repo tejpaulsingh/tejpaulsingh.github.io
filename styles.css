@@ -570,7 +570,9 @@ li:hover {
 
 @media only screen 
   and (max-device-width: 500px)  { 
-
+    html { 
+         font-family: 'Segoe UI', sans-serif;
+    }
     #mobileMenu {
         display: block;
         height: 5vh;
