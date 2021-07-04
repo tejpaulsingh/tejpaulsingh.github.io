@@ -1,3 +1,18 @@
+#announcement {
+    background-color: rgb(192, 0, 0);
+    width: 100vw;
+    height: 10vh;
+    margin-top: -12vh;
+    text-align: center;
+}
+
+.announcementtext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 3vh;
+    padding-top: 2vh;
+}
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -570,6 +585,22 @@ li:hover {
 
 @media only screen 
   and (max-device-width: 500px)  { 
+
+    #announcement {
+        background-color: rgb(192, 0, 0);
+        width: 100vw;
+        height: 19vh;
+       
+        bottom: 0;
+        text-align: center;
+    }
+    
+    .announcementtext {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 3vh;
+    }
+
     html { 
          font-family: 'Segoe UI', sans-serif;
     }
