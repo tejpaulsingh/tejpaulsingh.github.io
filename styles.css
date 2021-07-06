@@ -4,6 +4,7 @@
     height: 10vh;
     margin-top: -12vh;
     text-align: center;
+    display: none;
 }
 
 .announcementtext {
@@ -11,6 +12,7 @@
     color: white;
     font-size: 3vh;
     padding-top: 2vh;
+    display: none;
 }
 
 #navbar {
@@ -590,7 +592,7 @@ li:hover {
         background-color: rgb(192, 0, 0);
         width: 100vw;
         height: 19vh;
-       
+        display: none;
         bottom: 0;
         text-align: center;
     }
@@ -599,6 +601,7 @@ li:hover {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
         font-size: 3vh;
+        display: none;
     }
 
     html { 
